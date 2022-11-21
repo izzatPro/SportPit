@@ -136,8 +136,8 @@
         width: 211px;
         font-size: 13px;
         line-height: 20px;
-        height: 136px;
-        padding: 5px;
+        height: 142px;
+        padding: 11px;
     }
     .tabcontent__descr span{
         display: none;
@@ -145,5 +145,8 @@
     .preview__life{
         margin-top: 5px;
         font-size: 14px;
+    }
+    .tabcontent_vegy{
+        height: 136px;
     }
 }
