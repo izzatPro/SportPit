@@ -1,0 +1,73 @@
+@media(max-width:1200px){
+    .header__left-block{
+        min-width: 465px;
+    }
+    .header__links{
+        margin: 0 30px;
+    }
+    .header__links{
+        font-size: 16px;
+    }
+}
+@media(max-width: 992px){
+    .header__right-block button{
+        width: 150px;
+        height: 42px;
+        font-size: 16px;
+    }
+    .header__logo img{
+        width: 85%;
+    }
+    .header__left-block {
+    min-width: 420px;
+    }
+    .header__links a{
+        margin: 0 20px;
+        font-size: 16px !important;
+        margin-left: 40px;
+    }
+    .header__links{
+        margin-left: -40px;
+    }
+    .header{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 768px){
+    .header__links span{
+        display: none;
+    }
+    .header__links a {
+        font-size: 20px !important;
+    }
+    .header__left-block {
+        min-width: 390px;
+    }
+    .call_comp{
+        display: none;
+    }
+    .call_phone{
+        display: block !important;
+    }
+    /* .header__right-block button{
+        width: 122px;
+        font-size: 13px;
+    } */
+    .header__right-block button{
+        width: 80px;
+        font-size: 14px;
+    }
+    .header{
+        padding: 0 40px;
+    }
+}
+@media (max-width: 576px){
+    .header__link{
+        display: none;
+    }
+    .header{
+        width: 100%;
+        display: block;
+        padding: 30px 10px;
+    }
+}
