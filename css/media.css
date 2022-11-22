@@ -1,3 +1,47 @@
+@media(max-width:1300px){
+    .offer .container{
+        max-width: 993px;
+    }
+    .offer__descr{
+        font-size: 16px;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+    .offer .title{
+        font-size: 30px;
+        margin-left: 30px;
+    }
+    .offer .bgc_y{
+        max-width: 993px;
+    }
+    .offer .btn{
+        width: 197px;
+        height: 57px;
+    }
+    .offer__action{
+        margin-right: 20px;
+    }
+    .offer__slider-counter{
+        margin-right: 20px;
+    }
+    .offer__slider-wrapper{
+        width: 85%;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+    .offer__advantages h2{
+        font-size: 18px;
+    }
+    .offer__advantages-text{
+        font-size: 16px;
+    }
+    .offer__advantages-text {
+        margin-top: 13px;
+    }
+    .offer__advantages{
+        margin-left: 20px;
+    }
+}
 @media(max-width:1200px){
     .header__left-block{
         min-width: 465px;
@@ -13,9 +57,12 @@
     }
     .tabcontent__descr {
         width: 500px;
-        height: 300px;
+        height: 250px;
         font-size: 20px;
+        padding: 20px;
+        line-height:30px;
     }
+    
 }
 @media(max-width: 992px){
     .header__right-block button{
@@ -52,6 +99,29 @@
         line-height: 25px;
         padding: 25px;
 }
+    .offer .bgc_y{
+       max-width: 769px;
+    }
+    .offer__action {
+    margin-right: 8px;
+    }
+    .offer .btn {
+        width: 175px;
+        height: 48px;
+    }
+    .offer__descr{
+        margin-right: 70px;
+    }
+    #current , #total{
+        font-size: 25px !important;
+    }
+    .offer__slide{
+        height: 350px;
+    }
+    .offer__slide img {
+        height: 100%;
+    }
+    
 }
 @media (max-width: 768px){
     .header__links span{
@@ -103,6 +173,48 @@
        height: 222px;
        opacity: 0.85;
     }
+    .offer .bgc_y {
+        max-width: 577px;
+        height: 600px;
+    }
+    .offer__descr {
+        font-size: 13px;
+        line-height: 17px;
+        margin-left: 15px;
+    }
+    .offer .title {
+        font-size: 20px;
+        margin-left: 15px;
+    }
+    .offer .btn {
+        width: 100px;
+        height: 36px;
+    }
+    .offer__slide{
+        height: 200px;
+    }
+    .offer__slide img {
+        height: 100%;
+    }
+    .offer__advantages h2:first-child {
+        margin-top: 38px;
+    }
+    .offer__advantages-text {
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .offer__advantages-text {
+        font-size: 12px;
+        line-height: 15px;
+        margin-top: 8px;
+    }
+    .offer {
+        padding: 35px 0 50px 0;
+        position: relative;
+    }
+    .offer .title {
+        margin-top: 35px;
+    }
 }
 @media (max-width: 576px){
     .header__link{
@@ -148,5 +260,20 @@
     }
     .tabcontent_vegy{
         height: 136px;
+    }
+    .offer .bgc_y {
+        max-width: 300px;
+    }
+    .action_off{
+        display: none;
+    }
+    .offer .bgc_y {
+        height: 535px;
+    }
+    .offer .title {
+        margin-top: 24px;
+    }
+    .offer .title {
+        font-size: 16px;
     }
 }
