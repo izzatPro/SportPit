@@ -65,6 +65,17 @@
     .calculating {
         padding-bottom: 12px;
     }
+    .menu .container{
+        max-width: 993px;
+        align-items: stretch;
+        justify-content:space-around;
+    }
+    .menu__item {
+        width: 300px;
+    }
+    .menu__item-descr{
+        margin-top: 10px;
+    }
     
 }
 @media(max-width: 992px){
@@ -230,6 +241,13 @@
     .offer .title {
         margin-top: 35px;
     }
+    .calculating__choose_big {
+        width: 577px;
+    }
+    .calculating__choose_medium {
+        width: 577px;
+        justify-content: space-around;
+    }
 }
 @media (max-width: 576px){
     .header__link{
@@ -290,5 +308,41 @@
     }
     .offer .title {
         font-size: 16px;
+    }
+    .calculating__choose_big {
+        width: 300px;
+    }
+    .calculating__choose_medium {
+        width: 300px;
+    }
+    .calculating__choose-item {
+        width: 90px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .calculating__total {
+        width: 300px;
+    }
+    .calculating__divider {
+        width: 250px;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .calculating__choose {
+       margin-top: 15px;
+    }    
+    .calculating__subtitle {
+        margin-top: 15px;
+        font-size: 16px;
+    }
+    .calculating__total  .calculating__subtitle{
+        font-size: 15px;
+    }
+    .calculating__total  .calculating__result span{
+        font-size: 20px;
+    }
+    .calculating {
+        padding-bottom: 0px;
     }
 }
