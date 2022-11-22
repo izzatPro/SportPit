@@ -41,6 +41,9 @@
     .offer__advantages{
         margin-left: 20px;
     }
+    footer .container{
+        max-width: 890px;
+    }
 }
 @media(max-width:1200px){
     .header__left-block{
@@ -225,6 +228,23 @@
     .promotion .title {
         font-size: 25px;
     }
+    footer .container {
+        max-width: 750px;
+    }
+    .footer {
+        padding: 30px 0 50px 0;
+        min-height: 150px;
+    }
+    .footer .subtitle {
+        font-size: 18px;
+    }
+    .footer .link {
+        margin-top: 9px;
+        font-size: 15px;
+    }
+    .promotion{
+        padding-bottom: 150px;
+    }
 }
 @media (max-width: 768px){
     .header__links span{
@@ -386,6 +406,16 @@
     .promotion__timer .timer {
         margin-top: 30px;
     }
+    footer .container {
+        max-width: 550px;
+    }
+    .footer {
+        padding: 25px 0 32px 0;
+        min-height: 129px;
+    }
+    .promotion{
+        padding-bottom: 80px;
+    }
 }
 @media (max-width: 576px){
     .header__link{
@@ -543,4 +573,26 @@
 .promotion__timer .timer {
     margin-top: 10px;
 }
+footer .container {
+    max-width: 300px;
+}
+.footer .subtitle {
+    font-size: 11px;
+}
+.footer .link {
+    margin-top: 5px;
+    font-size: 12px;
+}
+.footer .container {
+    align-items: flex-start;
+}
+
+ .divider{
+    width: 250px;
+}
+.footer{
+    padding: 25px 0 15px 0;
+    min-height: 104px;
+}
+
 }

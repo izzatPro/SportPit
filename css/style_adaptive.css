@@ -1,6 +1,9 @@
 .call_phone{
     display: none;
 }
-body{
-    height: 233333px;
+footer .social img{
+    width: 40px;
+}
+.wrapper_link{
+    display: flex;
 }
