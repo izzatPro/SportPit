@@ -7,3 +7,6 @@ footer .social img{
 .wrapper_link{
     display: flex;
 }
+.sidepanel{
+    display: none;
+}
