@@ -62,6 +62,9 @@
         padding: 20px;
         line-height:30px;
     }
+    .calculating {
+        padding-bottom: 12px;
+    }
     
 }
 @media(max-width: 992px){
@@ -120,6 +123,18 @@
     }
     .offer__slide img {
         height: 100%;
+    }
+    .calculating__choose_big{
+        width: 769px;
+    }
+    .calculating__choose_big .calculating__choose-item {
+        width: 130px;
+    }
+    .calculating__choose_big {
+        justify-content: space-around;
+    }
+    .title{
+        font-size: 30px;
     }
     
 }
