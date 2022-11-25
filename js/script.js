@@ -112,7 +112,8 @@ $(document).ready(function(){
 
     const modalTrigger = document.querySelectorAll('[data-modal]'),
           modal = document.querySelector('.modal'),
-          modalCloseBtn = document.querySelector('[data-close]');
+          modalCloseBtn = document.querySelector('[data-close]'),
+          modal__input = document.querySelectorAll('.modal__input');
           modalTrigger.forEach(btn => {
             btn.addEventListener('click', function(){
                 modal.classList.add('show');
@@ -126,16 +127,23 @@ $(document).ready(function(){
             modal.classList.remove('show');
             document.body.style.overflow = '';
           }
-          modalCloseBtn.addEventListener('click',closeModal);
+          modalCloseBtn.addEventListener('click',() =>{
+            modal__input[0].value = '';
+            modal__input[1].value = '';
+            closeModal();
+          });
           modal.addEventListener('click', (e) =>{
-            console.log(e.target);
             if (e.target === modal ) {
+                modal__input[0].value = '';
+                modal__input[1].value = '';
                 closeModal();
             }
           });
 
           document.addEventListener('keydown', (e) =>{
             if (e.code === 'Escape' && modal.classList.contains('show')){
+                modal__input[0].value = '';
+                modal__input[1].value = '';
                 closeModal();
             }
           });
