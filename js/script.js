@@ -1,29 +1,35 @@
-import tabs from './modules/tabs';
-import modal from './modules/modal';
-import timer from './modules/timer';
-import cards from './modules/cards';
-import calc from './modules/calc';
-import forms from './modules/forms';
-import slider from './modules/slider';
-import {openModal} from './modules/modal';
+window.addEventListener('DOMContentLoaded', () =>{
+// Tabs
+let tabs = document.querySelectorAll('.tabheader__item'),
+    tabsContent = document.querySelectorAll('.tabcontent'),
+    tabParrent = document.querySelector('.tabheader__items');
 
-window.addEventListener('DOMContentLoaded', function() {
-    const modalTimerId = setTimeout(() => openModal('.modal', modalTimerId), 50000);
-
-    tabs('.tabheader__item', '.tabcontent', '.tabheader__items', 'tabheader__item_active');
-    modal('[data-modal]', '.modal', modalTimerId);
-    timer('.timer', '2022-06-11');
-    cards();
-    calc();
-    forms('form', modalTimerId);
-    slider({
-        container: '.offer__slider',
-        slide: '.offer__slide',
-        nextArrow: '.offer__slider-next',
-        prevArrow: '.offer__slider-prev',
-        totalCounter: '#total',
-        currentCounter: '#current',
-        wrapper: '.offer__slider-wrapper',
-        field: '.offer__slider-inner'
+    function hideTabContent(){
+        tabsContent.forEach(item =>{
+            item.classList.add('hide');
+            item.classList.remove('show','fade');
+        });
+        tabs.forEach(item =>{
+            item.classList.remove('tabheader__item_active');
+        });
+    };
+    function showTabContent(i = 0){
+        tabsContent[i].classList.add('show','fade');
+        tabsContent[i].classList.remove('hide');
+        tabs[i].classList.add('tabheader__item_active');
+    }
+    hideTabContent();
+    showTabContent();
+    tabParrent.addEventListener('click', function(e){
+        const target = e.target;
+        console.log(e.target);
+        if (target && target.classList.contains('tabheader__item')){
+            tabs.forEach((item,i) =>{
+                console.log(item);
+                if (target == item){
+                    hideTabContent();
+                    showTabContent(i);                }
+            });
+        }
     });
 });
