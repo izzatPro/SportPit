@@ -30,3 +30,6 @@ footer .social img{
     bottom: 50px;
     transition: 0.3s all;
 }
+.link{
+    cursor: pointer;
+}
