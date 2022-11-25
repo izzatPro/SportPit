@@ -32,4 +32,34 @@ let tabs = document.querySelectorAll('.tabheader__item'),
             });
         }
     });
+
+
+    // Scroll
+$(document).ready(function(){
+    $("a").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){     
+      window.location.hash = hash;
+        });
+      } 
+    });
+  });
+    // Scroll Top  
+  $('.back-to-top').click(function () {
+    $('body,html').animate({ scrollTop: 0}, 800); 
+    });
+    $(window).scroll(function() { 
+    let scrolled = $(window).scrollTop(); // Вычисляем сколько было прокручено.
+
+    if(scrolled > 350) {
+        $('.back-to-top').addClass('active');
+    } else {
+        $('.back-to-top').removeClass('active');
+    }
+});
+
 });

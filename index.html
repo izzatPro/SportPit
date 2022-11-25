@@ -15,8 +15,8 @@
                 <img src="icons/logo.svg" alt="Логотип">
             </div>
             <nav class="header__links">
-                <a href="#" class="header__link">Доставка <span> питания </span></a>
-                <a href="#" class="header__link">Калькулятор <span>Калорий</span></a>
+                <a href="#menu" class="header__link">Доставка <span> питания </span></a>
+                <a href="#calc" class="header__link">Калькулятор <span>Калорий</span></a>
             </nav>
         </div>
         <div class="header__right-block">
@@ -137,7 +137,7 @@
     </div>
     <div class="divider"></div>
 
-     <div class="calculating">
+     <div class="calculating" id="calc">
         <div class="container">
             <h2 class="title">Рассчитаем вашу потребность в калориях?
             </h2>
@@ -185,7 +185,7 @@
 
     <div class="divider"></div>
 
-     <div class="menu">
+     <div class="menu" id="menu">
         <h2 class="title">Наше меню на день</h2>
 
         <div class="menu__field">
@@ -308,7 +308,14 @@
             </div>
         </div>
     </div>  
+    <!-- Scroll  -->
+    <div id="back_to_top" class="back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" style="transform: rotate(270deg);" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+    </div>
 
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
