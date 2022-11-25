@@ -617,4 +617,17 @@ footer .container {
 svg path{
     fill:black;
 }
+
+}
+@media(max-width:400px){
+.modal__content{
+    padding: 16px;
+}
+.modal__title{
+    font-size: 17px;
+}
+.modal__close{
+    top: -5px !important;
+    right: 4px !important;
+}
 }
